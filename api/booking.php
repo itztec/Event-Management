@@ -34,7 +34,7 @@ if (!$name || !$phone || !$eventType) {
     exit();
 }
 
-$to = 'booking@elitemoments.com'; // Update recipient email address as needed
+$to = 'booking@rmevents.com'; // Update recipient email address as needed
 $emailSubject = "VIP Event Booking Request from " . $name;
 
 $emailBody = "New Event Reservation Booking Request:\n\n";
@@ -46,7 +46,7 @@ $emailBody .= "Guest Count: " . $guestCount . "\n";
 $emailBody .= "Location: " . $location . "\n\n";
 $emailBody .= "Notes / Custom Vision:\n" . $notes . "\n";
 
-$host = $_SERVER['HTTP_HOST'] ?? 'elitemoments.com';
+$host = $_SERVER['HTTP_HOST'] ?? 'rmevents.com';
 $headers = "From: Website Booking <no-reply@" . $host . ">\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 

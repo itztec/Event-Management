@@ -31,7 +31,7 @@ if (!$name || !$email || !$message) {
     exit();
 }
 
-$to = 'info@elitemoments.com'; // Update recipient email address as needed
+$to = 'info@rmevents.com'; // Update recipient email address as needed
 $emailSubject = "Contact Inquiry: " . $subject;
 
 $emailBody = "You have received a new contact inquiry:\n\n";
